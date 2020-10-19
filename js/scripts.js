@@ -34,7 +34,7 @@ function newItem(){
 
  // 4. Reordering the items:
    $('#list').sortable();
-
+   $('input').val('');
 }
 
 $('#input').keypress(function(e) {
