@@ -36,3 +36,11 @@ function newItem(){
    $('#list').sortable();
 
 }
+
+$('#input').keypress(function(e) {
+  if (e.keyCode == '13') {
+    e.preventDefault();
+    newItem();
+    $('#input').val('');
+  }
+});
